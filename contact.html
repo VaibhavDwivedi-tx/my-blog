@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c7873;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        a {
+            color: #2c7873;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            color: #38a169;
+            transform: scale(1.1);
+        }
+
+        li span {
+            font-weight: bold;
+            color: #1e3d59;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>About Me</h1>
+        <ul>
+            <li>📞 <span>Phone:</span> 7523871258</li>
+            <li>📧 <span>Email:</span> <a href="mailto:vaibhavdwivedi1759@gmail.com">vaibhavdwivedi1759@gmail.com</a></li>
+            <li>🔗 <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/vaibhav-dwivedi-973185244/">Vaibhav Dwivedi</a></li>
+            <li>📍 <span>Location:</span> <a href="https://www.google.com/maps/place/Fatehpur,+Uttar+Pradesh/">Fatehpur, Uttar Pradesh</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

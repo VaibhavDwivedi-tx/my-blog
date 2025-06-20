@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Mini Blog - Blogs</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        p.intro {
+            font-size: 1.3rem;
+            color: #f0f0f0;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 25px;
+            width: 100%;
+            max-width: 1000px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            animation: fadeInUp 1.2s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: "📝";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #004999;
+            text-decoration: underline;
+        }
+
+        /* Button Styles (from post1) */
+        .home-button {
+            margin-top: 40px;
+            background-color: #38a169;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #2f855a;
+            transform: scale(1.05);
+        }
+
+        .home-button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p.intro {
+                font-size: 1.1rem;
+            }
+
+            li {
+                font-size: 1.1rem;
+            }
+
+            .home-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Blog Posts</h1>
+        <p class="intro">Here are some of my blogs you can explore. Each post shares a unique story from my life, experiences, and inspirations. 🌟</p>
+    </header>
+
+    <section>
+        <ul>
+            <li>Post 1: <a href="post1.html">The Strongest Backbone: My Father, the Farmer Behind Our Dreams</a></li>
+            <li>Post 2: <a href="post2.html">From Blueprints to Bullet Trains: My Brother’s Role in India’s Mega Project</a></li>
+            <li>Post 3: <a href="post3.html">From Kabaddi to Code: Balancing Sports and Software</a></li>
+        </ul>
+    </section>
+
+    <!-- Styled Home Button -->
+    <button class="home-button"><a href="index.html.html">🏠 Home</a></button>
+
+</body>
+</html>

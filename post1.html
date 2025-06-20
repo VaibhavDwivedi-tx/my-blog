@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Mini Blog - Post 1</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+            color: #333;
+            min-height: 100vh;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #2c7873;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-out;
+        }
+
+        p {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            max-width: 950px;
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: justify;
+            color: #333;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #38a169;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #2f855a;
+            transform: scale(1.05);
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 20px;
+            }
+
+            button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🌾The Strongest Backbone: My Father, the Farmer Behind Our Dreams</h1>
+
+        <p>
+            Not every story is perfect, and not every journey is the same. But if there’s one thing that’s stayed constant in my life, it’s my father—our strongest backbone.<br><br>
+
+            He’s a farmer, not the kind who works in the fields every day, but someone who manages the land, handles responsibilities, and quietly carries the weight of the whole family on his shoulders. He always made sure me and my brother had the best chance at a good future.<br><br>
+
+            My brother chose the path my father dreamed of—he studied hard, became a civil engineer, and now works on one of India’s biggest projects: the Bullet Train, in collaboration with a Japanese company. My father’s eyes light up when he talks about him. He’s proud. And he should be.<br><br>
+
+            Me? I was never the bookworm. I spent more time playing games than studying. I’ve always been more into the virtual world than the academic one. But somewhere in between those late-night gaming sessions and school struggles, I discovered something that clicked—coding. It’s like gaming, but better. I get to create. Build. Solve problems. It excites me in a way nothing else does.<br><br>
+
+            I know my father believes in my brother more than me right now. And honestly, I get it. I haven’t proven much yet. But I’m not giving up. I may not have taken the path he expected, but I’m carving out my own.<br><br>
+
+            This blog isn’t just a tribute. It’s a promise.<br><br>
+
+            One day, I’ll make him proud—not by following someone else’s footsteps, but by standing strong in my own. Because the same way he believed in the soil and the seasons, I believe in myself, in my code, and in what I can build.
+        </p>
+
+        <div class="buttons">
+            <button><a href="blog.html">⬅️ Back To Blog List</a></button>
+            <button><a href="post2.html">Next Blog ➡️</a></button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Mini Blog - Post 3</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+            transition: background 0.5s ease;
+        }
+
+        /* Header Styles */
+        h1 {
+            font-size: 3rem;
+            color: #1e3d59;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-out;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 25px;
+            color: #2c7873;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraph Styles for Different Boxes */
+        .box {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            max-width: 950px;
+            width: 100%;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            text-align: justify;
+            color: #333;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Different Box Styles */
+        .athletes-box {
+            background-color: #e9f7ef;
+            border-left: 6px solid #2c7873;
+        }
+
+        .gamers-box {
+            background-color: #f0f9ff;
+            border-left: 6px solid #1e3d59;
+        }
+
+        .coding-box {
+            background-color: #f8f9fa;
+            border-left: 6px solid #38a169;
+        }
+
+        .balance-box {
+            background-color: #fff4e6;
+            border-left: 6px solid #fbbd23;
+        }
+
+        .future-box {
+            background-color: #ffe6f0;
+            border-left: 6px solid #d5006d;
+        }
+
+        /* List Style */
+        ul {
+            list-style-type: "✅ ";
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        /* Button Styles */
+        .buttons {
+            display: flex;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #38a169;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #2f855a;
+            transform: scale(1.05);
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .box {
+                font-size: 1rem;
+                padding: 18px;
+            }
+
+            button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎮🏅 From Sports Fields to Software Screens: Balancing Games, Sports, and Growth</h1>
+
+    <div class="box athletes-box">
+        <h2>⚽🏸 The Athlete’s Spirit</h2>
+        <p>
+            Sports were my first teachers. On every field and court, I learned the power of:
+            <ul>
+                <li>Teamwork in football and basketball,</li>
+                <li>Strategy in badminton and kabaddi,</li>
+                <li>Discipline and sportsmanship no matter the result.</li>
+            </ul>
+            Every win boosted my confidence, and every loss made me stronger. Sports taught me to move quickly, think faster, and never give up.
+        </p>
+    </div>
+
+    <div class="box gamers-box">
+        <h2>🎮 The Gamer’s Edge</h2>
+        <p>Mobile games brought a new type of competition into my life.
+            In games like PUBG, Free Fire, Call of Duty Mobile, and others, I found new ways to challenge myself — not physically, but mentally.
+        </p>
+        <p>
+            Playing online games sharpened different skills:
+            <ul>
+                <li>Tactical thinking in pressure situations,</li>
+                <li>Coordination and communication with teams across the world.</li>
+            </ul>
+        </p>
+        <p>Gaming isn't "just playing" — it's learning about patience, strategy, leadership, and adaptability in a fast-changing environment.</p>
+    </div>
+
+    <div class="box coding-box">
+        <h2>💻 Learning to Code</h2>
+        <p>
+            While sports trained my body and gaming trained my reflexes, coding began training my mind.
+            Learning HTML, CSS, JavaScript, and stepping into the world of software development taught me another important skill: building something meaningful with focus and creativity.<br>
+            Each coding bug feels like a tough opponent in a game. Each completed project feels like winning a hard match.
+        </p>
+    </div>
+
+    <div class="box balance-box">
+        <h2>🔄 Balancing All Three</h2>
+        <p>
+            Balancing outdoor sports, mobile gaming, and coding wasn’t always easy.
+            It meant choosing how to spend my energy, when to play, when to practice, and when to sit down and learn.<br>
+            But over time, I realized:
+            <ul>
+                <li>Sports made me physically strong and disciplined,</li>
+                <li>Gaming made me mentally sharp and tactical,</li>
+                <li>Coding made me analytical and creative.</li>
+            </ul>
+            Together, they made me who I am — someone who loves challenges, whether it’s a game, a match, or a project.
+        </p>
+    </div>
+
+    <div class="box future-box">
+        <h2>🚀 Moving Forward</h2>
+        <p>
+            I don’t plan to leave any of these behind. Sports, gaming, and coding are all part of me. They teach me new things every day, keep me motivated, and push me to chase bigger dreams.<br>
+            From sports fields to battlegrounds to building websites — the journey is still just getting started.
+            And I can’t wait to see where it goes next.
+        </p>
+    </div>
+
+    <div class="buttons">
+        <button><a href="post2.html">⬅️ Previous Blog</a></button>
+        <button><a href="blog.html">Back To Blog List</a></button>
+    </div>
+
+</body>
+</html>
